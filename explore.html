@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Explore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h2>Explore Music</h2>
+
+  <input type="text" placeholder="Search...">
+
+  <h4>Trending</h4>
+  <div class="albums">
+    <div class="album" onclick="selectSong(0)"></div>
+    <div class="album" onclick="selectSong(1)"></div>
+    <div class="album" onclick="selectSong(2)"></div>
+  </div>
+
+  <br>
+ <div class="navbar">
+  <span onclick="location.href='explore.html'">🏠</span>
+  <span onclick="location.href='playlist.html'">📃</span>
+  <span onclick="location.href='player.html'">🎧</span>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

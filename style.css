@@ -1,0 +1,212 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1d1f3a, #0f1021);
+}
+
+/* CARD (MAIN MOBILE UI) */
+.card {
+  width: 320px;
+  height: 600px;
+  border-radius: 25px;
+  padding: 20px;
+  color: white;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+
+  box-shadow: 
+    0 8px 32px rgba(0,0,0,0.4),
+    inset 0 0 10px rgba(255,255,255,0.05);
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* HEADINGS */
+h2, h3 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+h4 {
+  margin-top: 15px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* SEARCH */
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+
+  background: rgba(255,255,255,0.08);
+  color: white;
+
+  margin-top: 10px;
+}
+
+/* ALBUM GRID */
+.albums {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.album {
+  width: 70px;
+  height: 70px;
+  border-radius: 15px;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+
+  transition: 0.3s;
+}
+
+.album:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ff758c;
+}
+
+/* PLAYER COVER */
+.cover {
+  width: 180px;
+  height: 180px;
+  border-radius: 20px;
+  margin: 20px auto;
+
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* TEXT */
+p {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+/* PROGRESS BAR */
+input[type="range"] {
+  width: 100%;
+  margin-top: 15px;
+  accent-color: #ff6b81;
+}
+
+/* CONTROLS */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* CONTROL BUTTONS */
+button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  color: white;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #ff6b81;
+  transform: scale(1.1);
+}
+
+/* PLAY BUTTON */
+.play {
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+
+  background: linear-gradient(135deg, #ff6b81, #ff4757);
+
+  box-shadow: 0 5px 20px rgba(255,107,129,0.6);
+}
+
+/* PLAYLIST */
+ul {
+  list-style: none;
+  margin-top: 10px;
+  overflow-y: auto;
+}
+
+li {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+
+  background: rgba(255,255,255,0.05);
+
+  display: flex;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+li:hover {
+  background: rgba(255,255,255,0.15);
+  transform: translateX(5px);
+}
+
+/* NAVIGATION */
+a {
+  text-decoration: none;
+  color: #ff6b81;
+  font-size: 14px;
+}
+
+/* BOTTOM NAV BAR */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.navbar span {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.navbar span:hover {
+  opacity: 1;
+  color: #ff6b81;
+}
+
+/* SCROLLBAR */
+ul::-webkit-scrollbar {
+  width: 5px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background: #ff6b81;
+  border-radius: 10px;
+}

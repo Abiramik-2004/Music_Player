@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card player">
+  <div class="cover"></div>
+
+  <h3 id="title">No Song Selected</h3>
+  <p id="artist">---</p>
+
+  <audio id="audio"></audio>
+
+  <input type="range" id="progress">
+
+  <div class="controls">
+    <button onclick="prevSong()">⏮</button>
+    <button onclick="togglePlay()">▶</button>
+    <button onclick="nextSong()">⏭</button>
+  </div>
+
+  <br>
+  <div class="navbar">
+  <span onclick="location.href='explore.html'">🏠</span>
+  <span onclick="location.href='playlist.html'">📃</span>
+  <span onclick="location.href='player.html'">🎧</span>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -17,7 +17,7 @@ Technologies Used
 HTML
 CSS
 JavaScript
-Project Structure
+
 music-player/
 │
 ├── index.html        # Main structure of the app
@@ -25,8 +25,6 @@ music-player/
 ├── script.js         # Functionality and logic
 ├── songs/            # Folder containing audio files
 └── images/           # Album art and icons
-How to Run the Project
-
 Download or clone the repository
 
 git clone https://github.com/your-username/music-player.git

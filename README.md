@@ -48,7 +48,7 @@ music-player/
 ### Clone the Repository
 
 
-git clone https://github.com/your-username/music-player.git
+git clone https://github.com/Abiramik-2004/Music_Player.git
 
 
 ### Open the Project
